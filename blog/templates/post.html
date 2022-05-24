@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <section class="w-75 container my-5 card p-0 border-0 shadow-sm">
+        <div class="card-header bg-secondary text-light p-4">
+            <h1>{{post.titulo}}</h1>
+            <span>{{post.descricao}}</span>
+        </div>
+        <div class="card-body p-4">
+            <div class="d-flex flex-column align-items-center mb-4">
+                {% if post.imagem %}
+                    <img src="{{post.imagem.url}}" class="blog_img" alt="Imagem do post">
+                {% else %}
+                    <p>Post sem imagem</p>
+                {% endif %}
+                <div>
+                    {{post.conteudo}}
+                    {% if post.link != none %}
+                        <div>
+                            Link: <a href="{{post.link}}" target="_blank" rel="noopener noreferrer">{{post.link}}</a>
+                        </div>
+                    {% endif %}
+                </div>
+                
+            </div>
+            <span class="text-muted">{{post.data_criacao}}</span>
+        </div>
+    </section>
+</main>
+{% endblock %}

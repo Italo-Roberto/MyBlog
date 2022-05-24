@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <header>
+        <div id="person">
+            <h1>Italo Roberto</h1>
+            <strong>Analista de Redes e desenvolvedor</strong>
+            <p>
+                Atuando na área de infraestrutura e redes há mais de 3 anos, utilizando tecnologias como servidores Linux,
+                Zabbix Server, PRTG, Grafana e Docker.
+                Atualmente estudante de desenvolvimento fullstack, com foco em Python, possuo conhecimento e projetos publicados 
+                usando: Python, Django, PHP, Wordpress, Html, Javascript, Jquery e controle de versão com GIT.
+            </p>
+            {% load static %}
+            <a href="{% static 'img/Curriculo_ItaloRobertoGomesdeSouza.pdf' %}" target="_blank"
+                class="btn btn-primary shadow">Ver currículo</a>
+        </div>
+        <div class="eu-container">
+            <img src="{% static 'img/Eu.jpg' %}" class="eu" alt="Italo Roberto">
+            <ul class="d-flex">
+                <li>
+                    <a href="https://www.linkedin.com/in/italo-roberto-114b0267/"  target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin m-1" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/italo.roberto.10004" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook m-1" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="skills">
+        <div class="skill-header">
+            <h2>Habilidades</h2>
+            <span>Alguns dos principais conhecimentos que possuo.</span>
+        </div>
+        <div class="skill-container" id="skill-cont">
+            <div class="skills">
+                <div id="btn1" title="Clique para mostrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+                    </svg>
+                    <div>
+                        <h4>Frontend</h4>
+                        <span>Experiência de 2 anos</span>
+                    </div>
+                </div>
+                <div id="cont1">
+                    <ul>
+                        <li>
+                            Html
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Css
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Javascript
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            Jquery
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills">
+                <div id="btn2" title="Clique para mostrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                        <path
+                            d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                        <path
+                            d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
+                    </svg>
+                    <div>
+                        <h4>Backend</h4>
+                        <span>Experiência de 1 anos</span>
+                    </div>
+                </div>
+                <div id="cont2">
+                    <ul>
+                        <li>
+                            Python
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            PHP
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                        <li>
+                            NodeJS
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div id="port-head">
+            <h2>Portfólio</h2>
+            <span>Lista de páginas desenvolvidas por min.</span>
+        </div>
+        <div class="slide">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner d-flex">
+                    <div class="carousel-item active">
+                        <div class="works">
+                            <img src="{% static 'img/alves&melo.png' %}" class="img-works" alt="Alves & Melo Advogados Associados">
+                            <div class="works-desc">
+                                <h3>Alves e Melo - Advogados Associados</h3>
+                                <p>Escritório de advocacia em Recife.</p>
+                                <a class="btn btn-primary shadow" href="http://alvesemelo.adv.br"
+                                    target="_blank">Visite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="works">
+                            <img src="{% static 'img/stoik.png' %}" class="img-works" alt="Stoik">
+                            <div class="works-desc">
+                                <h3>Stoik</h3>
+                                <p>Desenvolvimentos de sites e sistemas Web.</p>
+                                <a class="btn btn-primary shadow" href="http://stoik.tech"
+                                    target="_blank">Visite</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div id="blog-head">
+            <h2>Blog</h2>
+            <span>Postagens mais recentes</span>
+        </div>
+        <div class="posts">
+            {% for post in posts %}
+            <a href="{{post.id}}" class="post">
+                <h3>
+                    {{post.titulo}}
+                </h3>
+                <span>
+                    {{post.descricao}}
+                </span>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="d-flex mx-auto justify-content-center w-75">
+            {% if user.is_authenticated %}
+                <a href="/form_posting/" class="btn btn-primary m-2">Nova Postagem</a>
+                <a href="/logout_user/" class="btn btn-danger m-2">Logout</a>
+            {% endif %}
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="contato-head">
+            <h2>Contato</h2>
+            <span>Entre em contato para solicitar nossos serviços.</span>
+        </div>
+        <div class="contact-container">
+            <div class="contact-iten-container">
+                <a href="tel:81992873311" class="contact-itens">
+                    <div class="contact-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-telephone-outbound-fill"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </div>
+                    <strong>(81)99287-3311</strong>
+                </a>
+                <a href="mailto:italoroberto61@gmail.com" class="contact-itens">
+                    <div class="contact-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
+                        </svg>
+                    </div>
+                    <strong>italoroberto61@gmail.com</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

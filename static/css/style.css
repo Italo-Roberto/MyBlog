@@ -1,0 +1,1011 @@
+*{
+    font-family: Consolas;
+}
+body{
+    background: whitesmoke;
+    color: rgb(20, 20, 20);
+}
+h1, h2, h3, h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Cabeçalho */
+header{
+    display: flex;
+}
+.eu{
+    border-radius: 50%;
+    box-shadow: rgb(195, 195, 195) 2px 2px 10px 3px;
+}
+.eu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+/* Habilidades */
+#skills{
+    display: flex; 
+    background: white;
+}
+.skill-header{
+    display: flex;
+}
+.bi-file-earmark-code-fill, .bi-file-earmark-code{
+    fill: rgb(40, 54, 255);
+}
+.skill-container{
+    display: flex; 
+}
+.skills{
+    background: whitesmoke;
+}
+#btn1, #btn2{
+    background: white;
+    display: flex;
+    border-radius: 10px;
+}
+#btn1:hover, #btn2:hover{
+    background: rgb(250, 251, 255);
+    transition: .5s;
+    box-shadow: rgb(221, 221, 221) 1px 1px 5px 2px;
+    cursor: pointer;
+}
+/* Portfolio */
+#portfolio{
+    display: flex;
+}
+.slide{
+    background: white;
+    border-radius: 10px;
+}
+.works{
+    display: flex;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+/* Posts */
+#blog{
+    display: flex; flex-direction: column;
+    background: white;
+}
+#blog-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center; justify-content: center;
+}
+.posts{
+    display: flex;
+}
+.post{
+    display: flex;
+    background: whitesmoke;
+    text-decoration: none;
+    color: black;
+}
+.post:hover{
+    transition: .5s;
+    box-shadow: rgb(231, 231, 231) 2px 2px 8px 3px;
+}
+.blog_img{
+    display: flex;
+}
+/* Contato */
+#contact{
+    display: flex; 
+}
+.contact-container{
+    width: 50%;
+    display: flex;
+}
+.form-container{
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgb(231, 231, 231) 2px 2px 8px 3px;
+}
+.contact-iten-container{
+    display: flex;
+}
+.contact-iten-container > a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+.contact-itens{
+    display: flex;
+}
+.contact-icons{
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgb(231, 231, 231) 2px 2px 8px 3px;
+}
+.bi-telephone-outbound-fill, .bi-envelope-open-fill{
+    fill: rgb(40, 54, 255);
+}
+/* Rodape */
+footer{
+    position: relative;
+    display: flex;
+    background: white;
+    left: 0;
+    bottom: 0;
+    top: 7vh;
+}
+
+/* Media Queries */
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body{
+        font-size: .9rem;
+    }
+    header{
+        flex-direction: column-reverse;
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    header > div{
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        width: 75%;
+    }
+    header > div > span{
+        display: none;
+    }
+    header > div > p{
+        margin-top: 3%;
+    }
+    .eu{
+        width: 175px;
+        margin: 5%;
+    }
+    .bi-linkedin, .bi-facebook{
+        width: 20px;
+    }
+    #skills{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 10% 2%;
+    }
+    .skill-container{
+        flex-direction: column;
+        padding: 2%;
+    }
+    #skills > div > span{
+        display: none;
+    }
+    .skill-header{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+    }
+    .bi-file-earmark-code-fill, .bi-file-earmark-code{
+        width: 45px;
+        margin: 2%;
+    }
+    .skills{
+        width: 315px;
+        border-radius: 10px;
+        padding: 2%; margin: 2%;
+    }
+    #btn1, #btn2{
+        width: 300px;
+        justify-content: start;
+        align-items: flex-end;
+        padding: 2%;
+    }
+    #btn1 > div > span, #btn2 > div > span{
+        display: none;
+    }
+    #cont1, #cont2{
+        margin: 2%;
+    }
+    #portfolio{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 3%;
+    }
+    #portfolio > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        margin-bottom: 3%;
+    }
+    #portfolio > div > span{
+        display: none;
+    }
+    .slide{
+        margin: 0 auto;
+        padding: 1%;
+    }
+    .works{
+        max-width: 325px;
+        flex-direction: column;
+        justify-content: center; align-items: flex-start;
+        padding: 3%;
+    }
+    .img-works{
+        max-width: 300px;
+        margin: .3%;
+    }
+    .works-desc{
+        padding: 3%;
+        margin: .5%;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    #blog{
+        justify-content: space-between; align-items: center;
+        padding: 3%;
+    }
+    #blog > div{
+        margin-bottom: 2%;
+    }
+    #blog > div > span{
+        display: none;
+    }
+    .posts{
+        max-width: 90%;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .post{
+        flex-direction: column;
+        justify-content: start; align-items: center;
+        max-width: 350px;
+        padding: 4%; margin: 3%;
+        border-radius: 10px;
+    }
+    .blog_img{
+        width: 275px;
+        margin: 1% auto;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    #contact > div:nth-child(1) > span{
+        display: none;
+    }
+    .contact-container{
+        flex-direction: column;
+        justify-content: flex-start; align-items: center;
+        margin-top: 5%;
+    }
+    .form-container{
+        width: 325px;
+        padding: 5%; margin: 0 4%;
+    }
+    .contact-iten-container{
+        flex-direction: column;
+        justify-content: start; align-items: flex-start;
+        margin: 5%;
+    }
+    .contact-itens{
+        justify-content: flex-start; align-items: center;
+        margin: 2% 5%;
+    }
+    .contact-icons{
+        padding: 4%; margin: 2%;
+    }
+    .bi-telephone-outbound-fill, .bi-envelope-open-fill{
+        width: 35px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 1.5%;
+    }
+ }
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header{
+        flex-direction: column-reverse;
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    header > div{
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        width: 75%;
+    }
+    header > div > span{
+        display: none;
+    }
+    header > div > p{
+        margin-top: 5%;
+    }
+    .eu{
+        width: 175px;
+        margin: 5%;
+    }
+    .bi-linkedin, .bi-facebook{
+        width: 20px;
+    }
+    #skills{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 7%;
+    }
+    .skill-header{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+    }
+    .bi-file-earmark-code-fill, .bi-file-earmark-code{
+        width: 50px;
+        margin: 2%;
+    }
+    .skill-container{
+        flex-direction: column;
+        padding: 2%;
+    }
+    .skills{
+        width: 500px;
+        border-radius: 10px;
+        padding: 2%; margin: 2%;
+    }
+    #btn1, #btn2{
+        justify-content: start;
+        align-items: flex-end;
+        padding: 4%;
+        border-radius: 10px;
+    }
+    #cont1, #cont2{
+        margin: 2%;
+    }
+    #portfolio{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    #portfolio > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        margin-bottom: 5%;
+    }
+    #portfolio > div > span{
+        display: none;
+    }
+    .slide{
+        margin: 0 auto;
+        padding: 1%;
+    }
+    .works{
+        justify-content: center; align-items: flex-start;
+        padding: 5%;
+    }
+    .img-works{
+        width: 350px;
+        margin: .5%;
+    }
+    .works-desc{
+        padding: 5%;
+        margin: .5%;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    #blog{
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    #blog > div{
+        margin-bottom: 2%;
+    }
+    #blog > div > span{
+        display: none;
+    }
+    .posts{
+        max-width: 90%;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .post{
+        flex-direction: column;
+        justify-content: start; align-items: center;
+        max-width: 400px;
+        padding: 4%; margin: 3%;
+        border-radius: 10px;
+    }
+    .blog_img{
+        width: 350px;
+        margin: 2% auto;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    .contact-container{
+        flex-direction: column;
+        justify-content: flex-start; align-items: center;
+        margin-top: 5%;
+    }
+    .form-container{
+        width: 500px;
+        padding: 5%; margin: 0 4%;
+    }
+    .contact-iten-container{
+        justify-content: center; align-items: center;
+        margin: 5%;
+    }
+    .contact-itens{
+        justify-content: flex-start; align-items: center;
+        margin: 2% 5%;
+    }
+    .contact-icons{
+        padding: 4%; margin: 2%;
+    }
+    .bi-telephone-outbound-fill, .bi-envelope-open-fill{
+        width: 35px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 1.5%;
+    }
+ }
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header{
+        flex-direction: column-reverse;
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    header > div{
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        width: 75%;
+    }
+    header > div > p{
+        margin-top: 5%;
+    }
+    .eu{
+        width: 175px;
+        margin: 5%;
+    }
+    .bi-linkedin, .bi-facebook{
+        width: 30px;
+    }
+    #skills{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 7%;
+    }
+    .skill-header{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+    }
+    .bi-file-earmark-code-fill, .bi-file-earmark-code{
+        width: 50px;
+        margin: 2%;
+    }
+    .skill-container{
+        flex-direction: column;
+        padding: 2%;
+    }
+    .skills{
+        width: 500px;
+        border-radius: 10px;
+        padding: 2%; margin: 2%;
+    }
+    #btn1, #btn2{
+        justify-content: start;
+        align-items: flex-end;
+        padding: 4%;
+        border-radius: 10px;
+    }
+    #cont1, #cont2{
+        margin: 2%;
+    }
+    #portfolio{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    #portfolio > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        margin-bottom: 5%;
+    }
+    .slide{
+        margin: 0 auto;
+        padding: 1%;
+    }
+    .works{
+        justify-content: center; align-items: flex-start;
+        padding: 5%;
+    }
+    .img-works{
+        width: 350px;
+        margin: .5%;
+    }
+    .works-desc{
+        padding: 5%;
+        margin: .5%;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    #blog{
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    #blog-head{
+        margin-bottom: 2%;
+    }
+    .posts{
+        max-width: 90%;
+        flex-direction: row;
+    }
+    .post{
+        flex-direction: column;
+        justify-content: start; align-items: center;
+        max-width: 400px;
+        padding: 4%; margin: 3%;
+        border-radius: 10px;
+    }
+    .blog_img{
+        width: 400px;
+        margin: 2% auto;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    #contact > div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; align-items: center;
+    }
+    .contact-container{
+        flex-direction: column;
+        justify-content: flex-start; align-items: center;
+        margin-top: 5%;
+    }
+    .form-container{
+        width: 500px;
+        padding: 5%; margin: 0 4%;
+    }
+    .contact-iten-container{
+        justify-content: center; align-items: center;
+        margin: 5%;
+    }
+    .contact-itens{
+        justify-content: flex-start; align-items: center;
+        margin: 2% 5%;
+    }
+    .contact-icons{
+        padding: 4%; margin: 2%;
+    }
+    .bi-telephone-outbound-fill, .bi-envelope-open-fill{
+        width: 35px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 2%;
+    }
+ }
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header{
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    header > div{
+        width: 50%;
+    }
+    header > div > p{
+        margin-top: 5%;
+    }
+    .eu{
+        width: 250px;
+        margin: 5%;
+    }
+    .bi-linkedin, .bi-facebook{
+        width: 30px;
+    }
+    #skills{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 7%;
+    }
+    .skill-header{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+    }
+    .bi-file-earmark-code-fill, .bi-file-earmark-code{
+        width: 50px;
+        margin: 2%;
+    }
+    .skill-container{
+        flex-direction: row;
+        padding: 2%;
+    }
+    .skills{
+        width: 500px;
+        border-radius: 10px;
+        padding: 2%; margin: 2%;
+    }
+    #btn1, #btn2{
+        justify-content: start;
+        align-items: flex-end;
+        padding: 4%;
+        border-radius: 10px;
+    }
+    #cont1, #cont2{
+        margin: 2%;
+    }
+    #portfolio{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    #portfolio > div{
+        margin-bottom: 5%;
+    }
+    .slide{
+        margin: 0 auto;
+        padding: 1%;
+    }
+    .works{
+        justify-content: center; align-items: flex-start;
+        padding: 5%;
+    }
+    .img-works{
+        width: 350px;
+        margin: .5%;
+    }
+    .works-desc{
+        padding: 5%;
+        margin: .5%;
+    }
+    #blog{
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    #blog-head{
+        margin-bottom: 4%;
+    }
+    .posts{
+        max-width: 90%;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .post{
+        flex-direction: column;
+        justify-content: start; align-items: center;
+        max-width: 400px;
+        padding: 4%; margin: 3%;
+        border-radius: 10px;
+    }
+    .blog_img{
+        width: 500px;
+        margin: 2% auto;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    .contact-container{
+        width: 25%;
+        justify-content: flex-start; align-items: center;
+        margin-top: 5%;
+    }
+    .form-container{
+        width: 75%;
+        padding: 4%; margin: 0 4%;
+    }
+    .contact-iten-container{
+        flex-direction: column;
+        margin: 5%;
+    }
+    .contact-itens{
+        justify-content: flex-start; align-items: center;
+        margin: 2%;
+    }
+    .contact-icons{
+        padding: 4%; margin: 2%;
+    }
+    .bi-telephone-outbound-fill, .bi-envelope-open-fill{
+        width: 50px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 2%;
+    }
+ }
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    body{
+        font-size: 1rem;
+    }
+    .navbar-brand{
+        margin: 0 15%;
+    }
+    .navbar-nav{
+        margin: 0 auto;
+    }
+    header{
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    header > div{
+        width: 50%;
+    }
+    header > div > p{
+        margin-top: 5%;
+    }
+    .eu{
+        width: 300px;
+        margin: 5%;
+    }
+    .bi-linkedin, .bi-facebook{
+        width: 30px;
+    }
+    #skills{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 7%;
+    }
+    .skill-header{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+    }
+    .bi-file-earmark-code-fill, .bi-file-earmark-code{
+        width: 50px;
+        margin: 2%;
+    }
+    .skill-container{
+        flex-direction: row;
+        padding: 2%;
+    }
+    .skills{
+        width: 500px;
+        border-radius: 10px;
+        padding: 2%; margin: 2%;
+    }
+    #btn1, #btn2{
+        justify-content: start;
+        align-items: flex-end;
+        padding: 4%;
+        border-radius: 10px;
+    }
+    #cont1, #cont2{
+        margin: 2%;
+    }
+    #portfolio{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 5%;
+    }
+    #portfolio > div{
+        margin-bottom: 5%;
+    }
+    .slide{
+        margin: 0 auto;
+        padding: 1%;
+    }
+    .works{
+        justify-content: center; align-items: flex-start;
+        padding: 5%;
+    }
+    .img-works{
+        width: 350px;
+        margin: .5%;
+    }
+    .works-desc{
+        padding: 5%;
+        margin: .5%;
+    }
+    #blog{
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    #blog-head{
+        margin-bottom: 4%;
+    }
+    .posts{
+        max-width: 90%;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .post{
+        flex-direction: column;
+        justify-content: start; align-items: center;
+        max-width: 400px;
+        padding: 4%; margin: 3%;
+        border-radius: 10px;
+    }
+    .blog_img{
+        width: 500px;
+        margin: 2% auto;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: space-between; align-items: center;
+        padding: 5%;
+    }
+    .contact-container{
+        flex-direction: column;
+        justify-content: flex-start; align-items: center;
+        margin-top: 5%;
+    }
+    .form-container{
+        width: 680px;
+        padding: 4%; margin: 0 4%;
+    }
+    .contact-iten-container{
+        justify-content: space-between;
+        margin: 5%;
+    }
+    .contact-itens{
+        justify-content: flex-start; align-items: center;
+        margin: 2% 15% 2% -8%;
+    }
+    .contact-icons{
+        padding: 4%; margin: 2%;
+    }
+    .bi-telephone-outbound-fill, .bi-envelope-open-fill{
+        width: 50px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 2%;
+    }
+ }
+@media (min-width: 1400px) and (max-width: 1920px) {
+    body{
+        font-size: 1.15rem;
+    }
+    .navbar-brand{
+        margin: 0 9%;
+    }
+    .navbar-nav{
+        margin: 0 auto;
+    }
+    header{
+        justify-content: center; align-items: center;
+        padding: 7%;
+    }
+    header > div{
+        max-width: 75%;
+        margin: 0 5%;
+    }
+    header > div > p{
+        margin-top: 5%;
+    }
+    .eu{
+        width: 300px;
+        margin: 5%;
+    }
+    .bi-linkedin, .bi-facebook{
+        width: 30px;
+    }
+    #skills{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 7%;
+    }
+    .skill-header{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+    }
+    .bi-file-earmark-code-fill, .bi-file-earmark-code{
+        width: 50px;
+        margin: 2%;
+    }
+    .skill-container{
+        flex-direction: row;
+        padding: 2%;
+    }
+    .skills{
+        width: 500px;
+        border-radius: 10px;
+        padding: 2%; margin: 2%;
+    }
+    #btn1, #btn2{
+        justify-content: start;
+        align-items: flex-end;
+        padding: 5%;
+        border-radius: 10px;
+    }
+    #cont1, #cont2{
+        margin: 2%;
+    }
+    #portfolio{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 7%;
+    }
+    #portfolio > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; align-items: center;
+        margin-bottom: 5%;
+    }
+    .slide{
+        margin: 0 auto;
+        padding: 1%;
+    }
+    .works{
+        justify-content: center; align-items: flex-start;
+        padding: 5%;
+    }
+    .img-works{
+        width: 375px;
+        margin: .5%;
+    }
+    .works-desc{
+        padding: 5%;
+        margin: .5%;
+    }
+    #blog{
+        justify-content: space-between; align-items: center;
+        padding: 7%;
+    }
+    #blog-head{
+        margin-bottom: 4%;
+    }
+    .posts{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .post{
+        flex-direction: column;
+        justify-content: start; align-items: center;
+        max-width: 600px;
+        padding: 5%; margin: 3%;
+        border-radius: 10px;
+    }
+    .blog_img{
+        width: 500px;
+        margin: 2% auto;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: space-between; align-items: center;
+        padding: 7%;
+    }
+    #contact > div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; align-items: center;
+    }
+    .contact-container{
+        justify-content: flex-start; align-items: center;
+        margin-top: 5%;
+    }
+    .form-container{
+        width: 700px;
+        padding: 4%; margin: 0 4%;
+    }
+    .contact-iten-container{
+        flex-direction: column;
+        margin: 5%;
+    }
+    .contact-itens{
+        justify-content: flex-start; align-items: center;
+        margin: 2%;
+    }
+    .contact-icons{
+        padding: 4%; margin: 2%;
+    }
+    .bi-telephone-outbound-fill, .bi-envelope-open-fill{
+        width: 50px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center; align-items: center;
+        padding: 2%;
+    }
+ }

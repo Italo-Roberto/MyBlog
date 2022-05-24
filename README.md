@@ -1,0 +1,46 @@
+<h1>Blog Pessoal com Django 4</h1>
+
+<img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" width="500px" height="275px" alt="Django Logo">
+
+<p>
+    Este projeto serve de base para qualquer blog básico que utilize o django. Basicamente possui uma home com informações de portfólio e link para renderização de página de postagens.
+</p>
+
+<h2>Instruções de instalação</h2>
+
+<p>
+    <strong>Pré requisitos:</strong>
+    <br>
+    <ul>
+        <li>Python 3.10.2 (ou superior)</li>
+        <li>Virtualenv 20.14.0 (ou superior)</li>
+        <li>Pip 21.2.4 (ou superior)</li>
+    </ul>
+</p>
+
+  <strong>Instalação</strong>
+  
+  Clone este repositório para sua máquina:      
+`git clone https://github.com/Italo-Roberto/myblog.git`
+  
+  Após Realizar o clone, entre no diretório e crie uma Virtualenv: <br>
+ `cd myblog/`
+ `virtualenv nome_veenv`
+  
+  Agora iremos instalar os pacotes necessário para rodar o projeto, através do arquivo requirements.txt (inclindo do Django) <br>
+ `pip install -r requirements.txt`
+
+  Antes de inicar o projeto, devemos fazer a migrações iniciais das tabelas no banco de dados <br>
+ `python manage.py migrate`
+ 
+  Iniciando projeto e servidor de desenvolvimento <br>
+  `python manage.py runserver`
+
+<p>
+    <strong>Utilização e personalização:</strong>
+    <br>
+    <p>
+        Este projeto e opensource, ou seja, você pode edita-lo para uso próprio, servindo de base para uma aplicação de blog pessoal.
+    </p>
+</p>
+

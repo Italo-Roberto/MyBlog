@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<main>
+    <section class="w-75 d-flex justify-content-center mx-auto card">
+        <div class="card-header p-4 bg-secondary text-light">
+            <h2>Escreva uma nova postagem</h2>
+        </div>
+        <form action="posting" class="card-body" method="post" enctype="multipart/form-data">{% csrf_token %}
+            <div class="form-group">
+                <label>Título</label>
+                <input type="text" name="titulo" class="form-control bg-light w-75">
+            </div>
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" name="descricao" class="form-control bg-light">
+            </div>
+            <div class="form-group">
+                <label>Conteúdo</label>
+                <textarea name="conteudo" class="form-control bg-light" id="conteudo" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Links</label>
+                <input type="text" class="form-control bg-light w-75" name="link">
+            </div>
+            <div class="form-group">
+                <label>Imagem de Destaque</label>
+                <input type="file" class="form-control bg-light w-75" name="imagem">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary my-2" value="Postar">
+            </div>
+        </form>
+    </section>
+</main>
+
+<script>
+    tinymce.init({
+        selector: '#conteudo'
+    })
+</script>
+{% endblock %}
