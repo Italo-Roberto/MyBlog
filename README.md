@@ -29,7 +29,7 @@
  `virtualenv nome_veenv`
 
   Necessário ativar veenv após sua criação: <br>
-  Linux, MacOS: `source nome_veenv/bin/activate`
+  Linux, MacOS: `source nome_veenv/bin/activate` <br>
   Windows: `nome_veenv/Scripts/Activate`
   
   Agora iremos instalar os pacotes necessário para rodar o projeto, através do arquivo requirements.txt (incluindo o Django) <br>
