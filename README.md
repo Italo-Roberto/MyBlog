@@ -27,8 +27,12 @@
   Após realizar o clone do repositório, entre no diretório <strong>myblog</strong> e crie uma Virtualenv: <br>
  `cd myblog/`
  `virtualenv nome_veenv`
+
+  Necessário ativar veenv após sua criação: <br>
+  Linux, MacOS: `source nome_veenv/bin/activate`
+  Windows: `nome_veenv/Scripts/Activate`
   
-  Agora iremos instalar os pacotes necessário para rodar o projeto, através do arquivo requirements.txt (incluindo do Django) <br>
+  Agora iremos instalar os pacotes necessário para rodar o projeto, através do arquivo requirements.txt (incluindo o Django) <br>
  `pip install -r requirements.txt`
 
   Necessário criar a tabela no banco de dados por comando <br>
