@@ -128,6 +128,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'blog')
 MEDIA_URL = '/blog/'
 
 TINYMCE_JS_URL = os.path.join(STATIC_URL, "js/tinymce.js")
+TINYMCE_COMPRESSOR = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

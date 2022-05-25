@@ -15,14 +15,21 @@
                     <p>Post sem imagem</p>
                 {% endif %}
                 <div>
-                    {{post.conteudo}}
+                    <div>
+                        {{post.conteudo|safe}}
+                    </div>
+                    <div class="w-75">
+                        {% if user.is_authenticated %}
+                            <a href="/edit_post/" class="btn btn-warning m-2">Editar</a>
+                            <a href="/delete_post/" class="btn btn-danger m-2">Excluir</a>
+                        {% endif %}
+                    </div>
                     {% if post.link != none %}
                         <div>
                             Link: <a href="{{post.link}}" target="_blank" rel="noopener noreferrer">{{post.link}}</a>
                         </div>
                     {% endif %}
                 </div>
-                
             </div>
             <span class="text-muted">{{post.data_criacao}}</span>
         </div>

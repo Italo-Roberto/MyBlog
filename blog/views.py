@@ -15,6 +15,7 @@ def blog(request):
     }
     return render(request, 'blog.html', data)
 
+#Rota que renderiza post individual
 def post(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
     return render(request, 'post.html', {'post': post})
