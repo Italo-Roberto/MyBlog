@@ -258,7 +258,7 @@ footer{
         border-radius: 10px;
     }
     .blog_img{
-        width: 275px;
+        width: 220px;
         margin: 1% auto;
     }
     #contact{
@@ -729,7 +729,7 @@ footer{
         font-size: 1rem;
     }
     .navbar-brand{
-        margin: 0 15%;
+        margin: 0 10%;
     }
     .navbar-nav{
         margin: 0 auto;
@@ -868,7 +868,7 @@ footer{
         font-size: 1.15rem;
     }
     .navbar-brand{
-        margin: 0 9%;
+        margin: 0 14%;
     }
     .navbar-nav{
         margin: 0 auto;
