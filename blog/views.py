@@ -1,3 +1,4 @@
+from turtle import pos
 from django.shortcuts import get_object_or_404, render, redirect
 #Rentringir algumas views apenas para usuários logados
 from django.contrib.auth.decorators import login_required
@@ -7,7 +8,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .models import Post
 
-# Create your views here.
+# View que exibie todos os posts
 def blog(request):
     data = {
         'posts': Post.objects.all(),
@@ -15,7 +16,7 @@ def blog(request):
     }
     return render(request, 'blog.html', data)
 
-#Rota que renderiza post individual
+#View que renderiza post individual
 def post(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
     return render(request, 'post.html', {'post': post})
@@ -42,19 +43,24 @@ def logout_user(request):
     logout(request)
     return redirect('/')
 
-#Rota que renderiza formulário de inserção dos posts
+#View que renderiza formulário de inserção dos posts
 @login_required(login_url='/login/')
 def form_posting(request):
     return render(request, 'form_posting.html')
 
-#Rota que insere postagens no banco
+#View que insere postagens no banco
 @login_required(login_url='/login/')
 def posting(request):
     if request.POST:
         titulo = request.POST.get('titulo')
         descricao = request.POST.get('descricao')
-        imagem = request.POST.get('imagem')
         conteudo = request.POST.get('conteudo')
-        link = request.POST.get('link')
-        Post.objects.create(titulo=titulo, descricao=descricao, imagem=imagem, conteudo=conteudo, link=link)
+        Post.objects.create(titulo=titulo, descricao=descricao, conteudo=conteudo)
+    return redirect('/')
+
+#View que excluir evento
+@login_required(login_url='/login/')
+def delete_post(request, id_post):
+    post = Post.objects.get(id=id_post)
+    post.delete()
     return redirect('/')

@@ -21,14 +21,6 @@
                 <label>Conteúdo</label>
                 <textarea name="conteudo" class="form-control bg-light" id="conteudo" cols="30" rows="10"></textarea>
             </div>
-            <div class="form-group">
-                <label>Links</label>
-                <input type="text" class="form-control bg-light w-75" name="link">
-            </div>
-            <div class="form-group">
-                <label>Imagem de Destaque</label>
-                <input type="file" class="form-control bg-light w-75" name="imagem">
-            </div>
 
             <div class="form-group">
                 <input type="submit" class="btn btn-primary my-2" value="Postar">
@@ -39,7 +31,10 @@
 
 <script>
     tinymce.init({
-        selector: '#conteudo'
+        selector: '#conteudo',
+        plugins: [
+            'advlist autolink link image list media'
+        ]
     })
 </script>
 {% endblock %}

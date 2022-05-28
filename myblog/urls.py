@@ -31,6 +31,7 @@ urlpatterns = [
     path('<int:post_id>/', views.post, name='post'),
     path('form_posting/', views.form_posting, name='form_posting'),
     path('form_posting/posting', views.posting, name='posting'),
+    path('login/delete_post/<int:id_post>', views.delete_post, name='delete_post'),
 ]
 
 #Necessário para armazenamento de imagens
