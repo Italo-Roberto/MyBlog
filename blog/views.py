@@ -58,9 +58,31 @@ def posting(request):
         Post.objects.create(titulo=titulo, descricao=descricao, conteudo=conteudo)
     return redirect('/')
 
+#View que renderiza forumlário de edição de post
+@login_required(login_url='/login/')
+def render_update_post(request, post_id):
+    post = get_object_or_404(Post, pk=post_id)
+    return render(request, 'update_post.html', {'post': post})
+
+#View que salva alteraçõs no post
+@login_required(login_url='/login/')
+def update_post(request):
+    if request.POST:
+        post_id = request.POST.get('id')
+        titulo = request.POST.get('titulo')
+        descricao = request.POST.get('descricao')
+        conteudo = request.POST.get('conteudo')
+        post = Post.objects.get(id=post_id)
+        post.post_id = post_id
+        post.titulo = titulo
+        post.descricao = descricao
+        post.conteudo = conteudo
+        post.save()
+    return redirect(f'/post/{post_id}')
+
 #View que excluir evento
 @login_required(login_url='/login/')
-def delete_post(request, id_post):
-    post = Post.objects.get(id=id_post)
+def delete_post(request, post_id):
+    post = Post.objects.get(id=post_id)
     post.delete()
     return redirect('/')

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<main>
+    <section class="w-75 d-flex justify-content-center mx-auto card">
+        <div class="card-header p-4 bg-secondary text-light">
+            <h2>Editar Postagem</h2>
+        </div>
+        <form action="update_post" class="card-body" method="post" enctype="multipart/form-data">{% csrf_token %}
+            <input type="hidden" name="id" value="{{post.id}}">
+            <div class="form-group">
+                <label>Título</label>
+                <input type="text" name="titulo" class="form-control bg-light w-75" value="{{post.titulo}}">
+            </div>
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" name="descricao" class="form-control bg-light" value="{{post.descricao}}">
+            </div>
+            <div class="form-group">
+                <label>Conteúdo</label>
+                <textarea name="conteudo" class="form-control bg-light" id="conteudo" cols="30" rows="10">{{post.conteudo}}</textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-warning my-2 shadow" value="Salvar">
+            </div>
+        </form>
+    </section>
+</main>
+
+<script>
+    tinymce.init({
+        selector: '#conteudo',
+        plugins: [
+            'advlist autolink link image list media'
+        ]
+    })
+</script>
+{% endblock %}

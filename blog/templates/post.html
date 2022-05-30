@@ -15,7 +15,8 @@
                     </div>
                     <div class="w-75">
                         {% if user.is_authenticated %}
-                            <a href="/login/delete_post/{{post.id}}" class="btn btn-danger m-2">Excluir</a>
+                            <a href="/render_update_post/{{post.id}}" class="btn btn-warning m-2 shadow">Editar</a>
+                            <a href="/login/delete_post/{{post.id}}" class="btn btn-danger m-2 shadow">Excluir</a>
                         {% endif %}
                     </div>
                 </div>

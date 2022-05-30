@@ -28,10 +28,12 @@ urlpatterns = [
     path('login/submit', views.submit_login),
     path('logout_user/', views.logout_user),
     #Blog
-    path('<int:post_id>/', views.post, name='post'),
+    path('post/<int:post_id>/', views.post, name='post'),
     path('form_posting/', views.form_posting, name='form_posting'),
     path('form_posting/posting', views.posting, name='posting'),
-    path('login/delete_post/<int:id_post>', views.delete_post, name='delete_post'),
+    path('render_update_post/<int:post_id>', views.render_update_post, name='render_update_post'),
+    path('render_update_post/update_post', views.update_post, name='update_post'),
+    path('login/delete_post/<int:post_id>', views.delete_post, name='delete_post'),
 ]
 
 #Necessário para armazenamento de imagens
