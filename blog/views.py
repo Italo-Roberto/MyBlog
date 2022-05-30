@@ -11,7 +11,7 @@ from .models import Post
 # View que exibie todos os posts
 def blog(request):
     data = {
-        'posts': Post.objects.all(),
+        'posts': Post.objects.all()[:5],
         'user': request.user
     }
     return render(request, 'blog.html', data)
